@@ -1,0 +1,14 @@
+version: "3"
+services:
+  frontend:
+    build: .
+    container_name: frontend
+    ports:
+      - 8080:8080
+    command: npm run serve
+    volumes:
+      - .:/frontend
+      - frontend-node_modules:/frontend/node_modules
+    tty: true
+volumes:
+  frontend-node_modules:
