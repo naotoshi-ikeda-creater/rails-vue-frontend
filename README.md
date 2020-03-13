@@ -1,4 +1,4 @@
-# app_name
+# rails-vue-frontend
 
 ## Project setup
 ```
